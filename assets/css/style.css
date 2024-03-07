@@ -1,1 +1,41 @@
+* {
+  /* border: 1px solid red; */
+  /* margin: 2px; */
+}
 
+body {
+  transition: background-color 0.5s ease;
+}
+
+.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+header {
+  /* border: 3px solid blue; */
+  display: flex;
+  /*Seperate Heading and Dark Mode toggle*/
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+button#mode-toggle {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Set the mode toggle image to fixed width */
+#mode-toggle > img {
+  width: 50px;
+}
+
+h1 {
+  font-size: 220%;
+}
+
+h2 {
+  font-size: 180%;
+}
