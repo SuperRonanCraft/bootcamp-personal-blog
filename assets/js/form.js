@@ -4,9 +4,9 @@ const blogContentInput = document.getElementById("content");
 const submitButton = document.getElementById("submit-button");
 
 // Click event for submit button
-submitButton.addEventListener("click", () => {
+function newSubmission(event) {
   // console.log("Im a button!");
-
+  event.preventDefault();
   var blogPost = {
     author: blogAuthorInput.value,
     title: blogTitleInput.value,
@@ -21,11 +21,16 @@ submitButton.addEventListener("click", () => {
   localStorage.setItem("blogPosts", JSON.stringify(existingPosts));
 
   // Clear input fields
-  blogAuthorInput.value = "";
-  blogTitleInput.value = "";
-  blogContentInput.value = "";
+  // blogAuthorInput.value = "";
+  // blogTitleInput.value = "";
+  // blogContentInput.value = "";
 
+  submitButton.textContent = "New Blog Posted!";
   console.log("Blog post saved successfully!");
   //Redirect to blog posts
-  window.location.assign("blog.html");
-});
+  setTimeout(() => {
+    window.location.assign("blog.html");
+  }, 200);
+}
+
+submitButton.addEventListener("click", newSubmission);
