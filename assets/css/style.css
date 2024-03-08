@@ -21,6 +21,9 @@ body {
   header {
     border-color: white;
   }
+  footer {
+    border-color: white;
+  }
 }
 
 header {
@@ -30,7 +33,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  border-bottom: 5px black solid;
+  border-bottom: 3px black solid;
 }
 
 button#mode-toggle {
