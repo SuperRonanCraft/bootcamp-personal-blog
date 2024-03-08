@@ -3,3 +3,30 @@
   flex-wrap: nowrap;
   align-items: center;
 }
+
+.button {
+  margin-right: 30px;
+}
+
+.post {
+  border-radius: 5px;
+  margin: 20px;
+  border: 3px solid black;
+}
+
+.title {
+  border-bottom: solid 3px black;
+  margin: 10px;
+}
+
+.content {
+  padding-left: 30px;
+  padding-bottom: 50px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.author {
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
