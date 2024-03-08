@@ -1,16 +1,16 @@
 const blogAuthorInput = document.getElementById("author");
 const blogTitleInput = document.getElementById("title");
 const blogContentInput = document.getElementById("content");
-const button = document.getElementById("submit-button");
+const submitButton = document.getElementById("submit-button");
 
 // Click event for submit button
-button.addEventListener("click", () => {
+submitButton.addEventListener("click", () => {
   // console.log("Im a button!");
 
   var blogPost = {
-    title: "Saved Title",
-    content: "Some Content",
-    author: "Someone",
+    author: blogAuthorInput.value,
+    title: blogTitleInput.value,
+    content: blogContentInput.value,
   };
 
   // Get existing posts or initialize empty array
