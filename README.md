@@ -1,6 +1,6 @@
 # NAME OF REPO
 
-Visit [Deployment](https://superronancraft.github.io/bootcamp-personal-blog/)>) on Github Pages  
+Visit [Deployment](https://superronancraft.github.io/bootcamp-personal-blog/) on Github Pages  
 Source code to this project can be located [here](index.html)
 
 ## Description of Project
