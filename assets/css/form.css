@@ -1,0 +1,50 @@
+* {
+  /* Box element debugging tool*/
+  /* border: 2px red solid; */
+  /* margin: 5px; */
+}
+
+main {
+  display: flex;
+  text-align: center;
+  padding: 20px;
+}
+
+main div {
+  width: 50%;
+}
+/* Left block styling */
+#sunsetblock {
+  display: flex;
+  align-items: center; /*Center internal block in available space*/
+}
+
+#sunset {
+  /* Set the width and height of circle */
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #fdcf00, #a36201);
+  margin: auto;
+  /*Flex box for the "My First Blog" text element*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Right post form styling */
+#inputblock form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 10px;
+  font-weight: bold;
+}
+
+label,
+input,
+textarea {
+  margin: 5px;
+  padding: 5px;
+}
