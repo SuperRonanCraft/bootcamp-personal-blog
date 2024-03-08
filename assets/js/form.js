@@ -3,9 +3,9 @@ const blogTitleInput = document.getElementById("title");
 const blogContentInput = document.getElementById("content");
 const button = document.getElementById("submit-button");
 
-// Click Submit event
+// Click event for submit button
 button.addEventListener("click", () => {
-  console.log("Im a button!");
+  // console.log("Im a button!");
 
   var blogPost = {
     title: "Saved Title",
@@ -25,6 +25,7 @@ button.addEventListener("click", () => {
   blogTitleInput.value = "";
   blogContentInput.value = "";
 
-  alert("Blog post saved successfully!");
+  console.log("Blog post saved successfully!");
+  //Redirect to blog posts
   window.location.assign("blog.html");
 });
