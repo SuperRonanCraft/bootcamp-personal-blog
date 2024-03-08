@@ -9,7 +9,7 @@ body {
 }
 
 /* Change element colors to dark mode*/
-.dark-mode {
+.dark {
   background-color: #333333;
   color: #ffffff;
   .post {
