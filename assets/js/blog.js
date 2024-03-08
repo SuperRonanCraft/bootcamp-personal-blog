@@ -18,7 +18,7 @@ function createPost(_title, _content, _author) {
   post.style.display = "block";
 }
 
-window.onload = function () {
+window.addEventListener("load", () => {
   var savedPosts = JSON.parse(localStorage.getItem("blogPosts"));
   if (savedPosts) {
     savedPosts.forEach(function (post) {
@@ -27,7 +27,7 @@ window.onload = function () {
   } else {
     console.log("No blog posts found in localStorage.");
   }
-};
+});
 
 // Click event for clear button
 clearButton.addEventListener("click", () => {

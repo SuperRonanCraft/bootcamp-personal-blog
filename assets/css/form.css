@@ -52,3 +52,10 @@ textarea {
   margin: 5px;
   padding: 5px;
 }
+
+#error {
+  display: none;
+  text-align: center;
+  width: 100%;
+  color: red;
+}
