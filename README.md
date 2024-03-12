@@ -14,4 +14,5 @@ In this blog you are able to...
 
 ## Screenshot of Webpage
 
-![Screenshot of Webpage](/assets/images/webpage.png)
+![Screenshot of Webpage](/assets/images/webpage2.png)
+![Screenshot of Webpage2](/assets/images/webpage1.png)
