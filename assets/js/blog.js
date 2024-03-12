@@ -4,18 +4,31 @@ const clearButton = document.getElementById("clear-button");
 
 function createPost(_title, _content, _author) {
   // Grab the example post and copy its structure
-  const post = example.cloneNode(true);
-  // Set its title, content and author
-  const title = post.querySelector(".title");
+  const post = document.createElement("div");
+
+  //Create Title
+  const title = document.createElement("h3");
   title.textContent = _title;
-  const content = post.querySelector(".content");
+  title.classList.add("title");
+  post.appendChild(title);
+
+  //Create Content
+  const content = document.createElement("p");
   content.textContent = _content;
-  const author = post.querySelector(".author");
+  content.classList.add("content");
+  post.appendChild(content);
+
+  //Create Author
+  const author = document.querySelector("p");
   author.textContent = `Posted by: ${_author}`;
+  author.classList.add("author");
+  post.appendChild(author);
+
+  //Add class to post for styling
+  post.classList.add("post");
+
   // Add this new post to the posts element
   posts.appendChild(post);
-  // Because the example post is hidden, unhide it
-  post.style.display = "block";
 }
 
 window.addEventListener("load", () => {
@@ -37,3 +50,21 @@ clearButton.addEventListener("click", () => {
     posts.removeChild(posts.firstChild);
   }
 });
+
+// //Another shot at making a post via template (Just for fun)
+// function createPostViaTemplate(_title, _content, _author) {
+//   // Grab the example post and copy its structure
+//   const post = example.cloneNode(true);
+//   // Set its title, content and author
+//   const title = post.querySelector(".title");
+//   title.textContent = _title;
+//   const content = post.querySelector(".content");
+//   content.textContent = _content;
+//   //Select author element from example post
+//   const author = post.querySelector(".author");
+//   author.textContent = `Posted by: ${_author}`;
+//   // Add this new post to the posts element
+//   posts.appendChild(post);
+//   // Because the example post is hidden, unhide it
+//   post.style.display = "block";
+// }
